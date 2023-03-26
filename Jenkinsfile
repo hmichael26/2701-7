@@ -8,5 +8,10 @@ pipeline {
                 echo 'Hello World'
             }
         }
+        stage('show files') {
+            steps {
+                bat 'dir'
+            }
+        }
     }
 }
